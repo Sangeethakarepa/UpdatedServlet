@@ -31,7 +31,8 @@ public class EditTeam2 extends HttpServlet {
 		int status=TeamDao.update(e);
 		if(status>0){
 			response.sendRedirect("ViewTeam");
-		}else{
+		}
+		else{
 			pw.println("Sorry! unable to update record");
 		}
 		
